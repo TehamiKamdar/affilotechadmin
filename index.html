@@ -86,7 +86,7 @@
     background-color: white;
     color: var(--primary-color);
     font-weight: 500;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%236777EF' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2300a9da' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 1.25rem center;
     background-size: 12px;
@@ -172,8 +172,8 @@
       <div class="main-sidebar sidebar-style-2" id="sidebar">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
-            <a href="index.html"> <img alt="image" src="assets/img/logo.png" class="header-logo" /> <span
-                class="logo-name">Affilo Tech</span>
+            <a href="index.html"> <img alt="image" src="assets/affiloTechLogo.png" class="header-logo" /> 
+              <!-- <span class="logo-name">Affilo Tech</span> -->
             </a>
           </div>
           <ul class="sidebar-menu">
@@ -181,67 +181,71 @@
             <li class="dropdown active">
               <a href="index.html" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
             </li>
+            <li class="menu-header">publishers management</li>
+            <li class="dropdown">
+              <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                  data-feather="users"></i><span>Publishers</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="#">Pending</a></li>
+                <li><a class="nav-link" href="#">Hold</a></li>
+                <li><a class="nav-link" href="#">Active</a></li>
+                <li><a class="nav-link" href="#">Rejected</a></li>
+              </ul>
+            </li>
             <li class="menu-header">advertisers management</li>
             <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="users"></i><span>Advertisers</span></a>
+                  data-feather="bar-chart-2"></i><span>Advertisers</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="./my-advertisers.html">My Advertisers</a></li>
-                <li><a class="nav-link" href="#">New Advertisers</a></li>
-                <li><a class="nav-link" href="#">Find Advertisers</a></li>
+                <li><a class="nav-link" href="#">API Advertisers</a></li>
+                <li><a class="nav-link" href="#">API Advertisers Show</a></li>
+                <li><a class="nav-link" href="#">Duplicate Advertisers </a></li>
+                <li><a class="nav-link" href="#"></a></li>
               </ul>
             </li>
-            <li class="menu-header">reports management</li>
             <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="bar-chart-2"></i><span>Reporting</span></a>
+                  data-feather="user-check"></i><span>Approval</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="./transactions.html">Transactions</a></li>
-                <li><a class="nav-link" href="./performance.html">Performance</a></li>
+                <li><a class="nav-link" href="#">Pending</a></li>
+                <li><a class="nav-link" href="#">Joined</a></li>
+                <li><a class="nav-link" href="#">Hold</a></li>
+                <li><a class="nav-link" href="#">Rejected</a></li>
               </ul>
             </li>
-            <li class="menu-header">creativity</li>
+            <li class="menu-header">creatives</li>
             <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="tag"></i><span>Promotional</span></a>
+                  data-feather="tag"></i><span>Creatives</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="./coupons.html">Coupons</a></li>
-                <li><a class="nav-link" href="./deep-links.html">Deep Links</a></li>
-                <li><a class="nav-link" href="#">Text Links</a></li>
+                <li><a class="nav-link" href="#">Coupons</a></li>
               </ul>
             </li>
             <li class="menu-header">finance management</li>
             <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="credit-card"></i><span>Finance</span></a>
+                  data-feather="credit-card"></i><span>Transactions</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="./overview.html">Overview</a></li>
-                <li><a class="nav-link" href="./payments.html">Payments</a></li>
+                <li><a class="nav-link" href="#">Transactions</a></li>
+                <li><a class="nav-link" href="#">Missing Transactions</a></li>
               </ul>
             </li>
-            <li class="menu-header">tools management</li>
+            <li class="menu-header">access management</li>
             <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="paperclip"></i><span>Tools</span></a>
+                  data-feather="shield"></i><span>Manage</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="./links.html">Link Generator</a></li>
-                <li><a class="nav-link" href="./api.html">API Integration</a></li>
-                <li><a class="nav-link" href="./download.html">Download Export Files</a></li>
+                <li><a class="nav-link" href="#">Users</a></li>
+                <li><a class="nav-link" href="#">Roles</a></li>
+                <li><a class="nav-link" href="#">Permissions</a></li>
               </ul>
             </li>
             <li class="menu-header">settings</li>
             <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="info"></i><span>Settings</span></a>
+              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="settings"></i><span>Settings</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="./my-profile.html">Profile</a></li>
-                <li><a class="nav-link" href="./webs.html">Websites</a></li>
-                <li class="dropdown">
-                  <a href="#" class="has-dropdown">Payment Info</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="./billing.html">Billing</a></li>
-                  </ul>
-                </li>
-                <li><a class="nav-link" href="./settings.html">Settings</a></li>
+                <li><a class="nav-link" href="./my-profile.html">Default Commission</a></li>
+                <li><a class="nav-link" href="./webs.html">Notifications</a></li>
               </ul>
             </li>
 
@@ -415,34 +419,34 @@
                   <div class="swiper-slide">
                     <div class="advertiser-card card h-100 border-0 shadow-sm" style="width: 300px;">
                       <div class="card-header d-flex justify-content-between align-items-center"
-                        style="background-color: #6777ef; color: white;">
+                        style="background-color: #00a9da; color: white;">
                         <h5 class="mb-0">Advertiser Name</h5>
                         <span class="badge badge-pill badge-danger">Inactive</span>
                       </div>
                       <div class="card-body">
                         <div class="advertiser-attributes">
                           <div class="attribute-item">
-                            <i class="fas fa-percentage mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-percentage mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Commission:</span>
                             <span class="attribute-value">15%</span>
                           </div>
                           <div class="attribute-item">
-                            <i class="fas fa-map-marker-alt mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-map-marker-alt mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Region:</span>
                             <span class="attribute-value">North America</span>
                           </div>
                           <div class="attribute-item">
-                            <i class="fas fa-calendar-alt mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-calendar-alt mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Since:</span>
                             <span class="attribute-value">Jan 2022</span>
                           </div>
                           <div class="attribute-item">
-                            <i class="fas fa-tags mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-tags mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Category:</span>
                             <span class="attribute-value">Technology</span>
                           </div>
                           <div class="attribute-item">
-                            <i class="fas fa-star mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-star mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Rating:</span>
                             <span class="attribute-value">4.8/5</span>
                           </div>
@@ -451,7 +455,7 @@
                       <div class="card-footer">
                         <div class="row justify-content-around">
                           <a href="./view-advertisers.html" class="btn btn-sm"
-                            style="background-color: #6777ef; color: white;">View Details</a>
+                            style="background-color: #00a9da; color: white;">View Details</a>
                           <button class="btn btn-sm btn-success" style="color: white;">Active</button>
                         </div>
                       </div>
@@ -462,34 +466,34 @@
                   <div class="swiper-slide">
                     <div class="advertiser-card card h-100 border-0 shadow-sm" style="width: 300px;">
                       <div class="card-header d-flex justify-content-between align-items-center"
-                        style="background-color: #6777ef; color: white;">
+                        style="background-color: #00a9da; color: white;">
                         <h5 class="mb-0">Advertiser Two</h5>
                         <span class="badge badge-pill badge-success">Active</span>
                       </div>
                       <div class="card-body">
                         <div class="advertiser-attributes">
                           <div class="attribute-item">
-                            <i class="fas fa-percentage mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-percentage mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Commission:</span>
                             <span class="attribute-value">12%</span>
                           </div>
                           <div class="attribute-item">
-                            <i class="fas fa-map-marker-alt mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-map-marker-alt mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Region:</span>
                             <span class="attribute-value">Europe</span>
                           </div>
                           <div class="attribute-item">
-                            <i class="fas fa-calendar-alt mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-calendar-alt mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Since:</span>
                             <span class="attribute-value">Mar 2021</span>
                           </div>
                           <div class="attribute-item">
-                            <i class="fas fa-tags mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-tags mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Category:</span>
                             <span class="attribute-value">Finance</span>
                           </div>
                           <div class="attribute-item">
-                            <i class="fas fa-star mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-star mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Rating:</span>
                             <span class="attribute-value">4.5/5</span>
                           </div>
@@ -498,7 +502,7 @@
                       <div class="card-footer">
                         <div class="row justify-content-around">
                           <a href="./view-advertisers.html" class="btn btn-sm"
-                            style="background-color: #6777ef; color: white;">View Details</a>
+                            style="background-color: #00a9da; color: white;">View Details</a>
                           <button class="btn btn-sm btn-success" style="color: white;">Active</button>
                         </div>
                       </div>
@@ -509,34 +513,34 @@
                   <div class="swiper-slide">
                     <div class="advertiser-card card h-100 border-0 shadow-sm" style="width: 300px;">
                       <div class="card-header d-flex justify-content-between align-items-center"
-                        style="background-color: #6777ef; color: white;">
+                        style="background-color: #00a9da; color: white;">
                         <h5 class="mb-0">Advertiser Two</h5>
                         <span class="badge badge-pill badge-success">Active</span>
                       </div>
                       <div class="card-body">
                         <div class="advertiser-attributes">
                           <div class="attribute-item">
-                            <i class="fas fa-percentage mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-percentage mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Commission:</span>
                             <span class="attribute-value">12%</span>
                           </div>
                           <div class="attribute-item">
-                            <i class="fas fa-map-marker-alt mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-map-marker-alt mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Region:</span>
                             <span class="attribute-value">Europe</span>
                           </div>
                           <div class="attribute-item">
-                            <i class="fas fa-calendar-alt mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-calendar-alt mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Since:</span>
                             <span class="attribute-value">Mar 2021</span>
                           </div>
                           <div class="attribute-item">
-                            <i class="fas fa-tags mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-tags mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Category:</span>
                             <span class="attribute-value">Finance</span>
                           </div>
                           <div class="attribute-item">
-                            <i class="fas fa-star mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-star mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Rating:</span>
                             <span class="attribute-value">4.5/5</span>
                           </div>
@@ -545,7 +549,7 @@
                       <div class="card-footer">
                         <div class="row justify-content-around">
                           <a href="./view-advertisers.html" class="btn btn-sm"
-                            style="background-color: #6777ef; color: white;">View Details</a>
+                            style="background-color: #00a9da; color: white;">View Details</a>
                           <button class="btn btn-sm btn-success" style="color: white;">Active</button>
                         </div>
                       </div>
@@ -556,34 +560,34 @@
                   <div class="swiper-slide">
                     <div class="advertiser-card card h-100 border-0 shadow-sm" style="width: 300px;">
                       <div class="card-header d-flex justify-content-between align-items-center"
-                        style="background-color: #6777ef; color: white;">
+                        style="background-color: #00a9da; color: white;">
                         <h5 class="mb-0">Advertiser Two</h5>
                         <span class="badge badge-pill badge-success">Active</span>
                       </div>
                       <div class="card-body">
                         <div class="advertiser-attributes">
                           <div class="attribute-item">
-                            <i class="fas fa-percentage mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-percentage mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Commission:</span>
                             <span class="attribute-value">12%</span>
                           </div>
                           <div class="attribute-item">
-                            <i class="fas fa-map-marker-alt mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-map-marker-alt mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Region:</span>
                             <span class="attribute-value">Europe</span>
                           </div>
                           <div class="attribute-item">
-                            <i class="fas fa-calendar-alt mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-calendar-alt mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Since:</span>
                             <span class="attribute-value">Mar 2021</span>
                           </div>
                           <div class="attribute-item">
-                            <i class="fas fa-tags mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-tags mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Category:</span>
                             <span class="attribute-value">Finance</span>
                           </div>
                           <div class="attribute-item">
-                            <i class="fas fa-star mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-star mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Rating:</span>
                             <span class="attribute-value">4.5/5</span>
                           </div>
@@ -592,7 +596,7 @@
                       <div class="card-footer">
                         <div class="row justify-content-around">
                           <a href="./view-advertisers.html" class="btn btn-sm"
-                            style="background-color: #6777ef; color: white;">View Details</a>
+                            style="background-color: #00a9da; color: white;">View Details</a>
                           <button class="btn btn-sm btn-success" style="color: white;">Active</button>
                         </div>
                       </div>
@@ -603,34 +607,34 @@
                   <div class="swiper-slide">
                     <div class="advertiser-card card h-100 border-0 shadow-sm" style="width: 300px;">
                       <div class="card-header d-flex justify-content-between align-items-center"
-                        style="background-color: #6777ef; color: white;">
+                        style="background-color: #00a9da; color: white;">
                         <h5 class="mb-0">Advertiser Two</h5>
                         <span class="badge badge-pill badge-success">Active</span>
                       </div>
                       <div class="card-body">
                         <div class="advertiser-attributes">
                           <div class="attribute-item">
-                            <i class="fas fa-percentage mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-percentage mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Commission:</span>
                             <span class="attribute-value">12%</span>
                           </div>
                           <div class="attribute-item">
-                            <i class="fas fa-map-marker-alt mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-map-marker-alt mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Region:</span>
                             <span class="attribute-value">Europe</span>
                           </div>
                           <div class="attribute-item">
-                            <i class="fas fa-calendar-alt mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-calendar-alt mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Since:</span>
                             <span class="attribute-value">Mar 2021</span>
                           </div>
                           <div class="attribute-item">
-                            <i class="fas fa-tags mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-tags mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Category:</span>
                             <span class="attribute-value">Finance</span>
                           </div>
                           <div class="attribute-item">
-                            <i class="fas fa-star mr-2" style="color: #6777ef;"></i>
+                            <i class="fas fa-star mr-2" style="color: #00a9da;"></i>
                             <span class="attribute-label">Rating:</span>
                             <span class="attribute-value">4.5/5</span>
                           </div>
@@ -639,7 +643,7 @@
                       <div class="card-footer">
                         <div class="row justify-content-around">
                           <a href="./view-advertisers.html" class="btn btn-sm"
-                            style="background-color: #6777ef; color: white;">View Details</a>
+                            style="background-color: #00a9da; color: white;">View Details</a>
                           <button class="btn btn-sm btn-success" style="color: white;">Active</button>
                         </div>
                       </div>
