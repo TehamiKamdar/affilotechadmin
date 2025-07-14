@@ -29,7 +29,7 @@
     --primary-color: #00a9da !important ;
     --secondary-color: #ffffff !important ;
     --primary-light: #a2bef2;
-    --primary-very-light: #e8ebfc;
+    --primary-very-light: #f0f3ff;
     --primary-hover: #56cdd6;
     --primary-dark: #56cdd6;
     --text-light: #fff;
@@ -52,7 +52,7 @@
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 *::selection{
-    background-color: #f6f6f6;
+    background-color: #f0f3ff;
     color: #00a9da;
 }
 *,
@@ -155,7 +155,7 @@ strong {
     font-weight: bolder;
 }
 small {
-    font-size: 80%;
+    font-size: 90%;
 }
 sub,
 sup {
@@ -415,7 +415,7 @@ hr {
 }
 .small,
 small {
-    font-size: 80%;
+    font-size: 90%;
     font-weight: 400;
 }
 .mark,
@@ -1681,7 +1681,7 @@ pre code {
 }
 .table-hover tbody tr:hover {
     color: #212529;
-    background-color: rgba(0, 0, 0, 0.075);
+    background-color: #f0f3ff;
 }
 .table-primary,
 .table-primary > td,
@@ -1690,8 +1690,8 @@ pre code {
 }
 
 .table thead th {
-    background-color: var(--primary-color) !important ;
-    color: var(--secondary-color) !important ;
+    background-color: var(--primary-very-light) !important ;
+    color: var(--primary-color) !important ;
     border: none !important ;
   }
 

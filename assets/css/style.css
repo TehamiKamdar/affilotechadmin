@@ -2008,7 +2008,7 @@ ol {
     box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1);
 }
 .text-muted {
-    color: #98a6ad !important;
+    color: #8acdee !important;
 }
 .form-control,
 .input-group-text,
@@ -2996,7 +2996,7 @@ select.form-control:not([size]):not([multiple]) {
 .card .card-statistic-3 {
     position: relative;
     color: #fff;
-    padding: 15px;
+    padding: 20px;
     border-radius: 3px;
     overflow: hidden;
 }
@@ -3022,7 +3022,7 @@ select.form-control:not([size]):not([multiple]) {
 .card .card-statistic-4 {
     position: relative;
     color: #000000;
-    padding: 15px;
+    padding: 20px;
     border-radius: 3px;
     overflow: hidden;
 }
@@ -3101,7 +3101,7 @@ select.form-control:not([size]):not([multiple]) {
 .table:not(.table-sm):not(.table-md):not(.dataTable) td,
 .table:not(.table-sm):not(.table-md):not(.dataTable) th {
     padding: 0 10px;
-    height: 60px;
+    height: 45px;
     vertical-align: middle;
 }
 .table:not(.table-sm) thead th {
@@ -5580,8 +5580,7 @@ body.layout-3 .main-footer {
 }
 .main-sidebar .sidebar-brand a {
     text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 0px;
     font-weight: 700;
     font-size: 23px;
     vertical-align: bottom;
@@ -5593,6 +5592,7 @@ body.layout-3 .main-footer {
 .main-sidebar .sidebar-brand a .logo-name {
     vertical-align: middle;
     font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif !important;
 }
 .main-sidebar .sidebar-user {
     display: inline-block;
