@@ -10,6 +10,8 @@
   <title>Affilo Tech - Admin Dashboard</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/bundles/datatables/datatables.min.css">
+  <link rel="stylesheet" href="assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
@@ -167,10 +169,10 @@
               <a href="#" class="text-sm"><i data-feather="home" class=""></i></a>
             </li>
             <li class="breadcrumb-item mt-1">
-              <a href="#" class="text-sm">Publishers</a>
+              <a href="#" class="text-sm">Manage</a>
             </li>
             <li class="breadcrumb-item active mt-1">
-              <a href="#" class="text-sm">Pending Publishers</a>
+              <a href="#" class="text-sm">Roles</a>
             </li>
           </ol>
           <div>
@@ -193,7 +195,7 @@
               <a href="index.html" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
             </li>
             <li class="menu-header">publishers management</li>
-            <li class="dropdown active">
+            <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i
                   data-feather="users"></i><span>Publishers</span></a>
               <ul class="dropdown-menu">
@@ -224,7 +226,7 @@
               </ul>
             </li>
             <li class="menu-header">creatives</li>
-            <li class="dropdown">
+            <li class="dropdown ">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="tag"></i><span>Creatives</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="coupons.html">Coupons</a></li>
@@ -249,11 +251,11 @@
               </ul>
             </li>
             <li class="menu-header">settings</li>
-            <li class="dropdown">
+            <li class="dropdown active">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i
                   data-feather="settings"></i><span>Settings</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="default-commissions.html">Default Commission</a></li>
+                <li class="active"><a class="nav-link" href="default-commissions.html">Default Commission</a></li>
                 <li><a class="nav-link" href="./webs.html">Notifications</a></li>
               </ul>
             </li>
@@ -268,44 +270,19 @@
         <div class="row">
           <div class="col-12">
             <div class="card">
-            <div class="table-responsive">
-              <table class="table table-hover">
-                <div class="card-body">
-                        <div class="dt-responsive table-responsive">
-                            <table id="publisherListing" class="table table-hover table-bordered nowrap">
-                                <thead>
-                                    <tr>
-                                        <th class="text-center text-uppercase text-xxs font-weight-bolder opacity-7"><small>Created At</small></th>
-                                        <th class="text-center text-uppercase text-xxs font-weight-bolder opacity-7"><small>Name</small></th>
-                                        <th class="text-center text-uppercase text-xxs font-weight-bolder opacity-7"><small>Active Website</small></th>
-                                        <th class="text-center text-uppercase text-xxs font-weight-bolder opacity-7"><small>Email</small></th>
-                                        <th class="text-center text-uppercase text-xxs font-weight-bolder opacity-7"><small>Status</small></th>
-                                        <th class="text-center text-uppercase text-xxs font-weight-bolder opacity-7"><small>API Key</small></th>
-                                        <th class="text-center text-uppercase text-xxs font-weight-bolder opacity-7"><small>Action</small></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <th class="text-center text-uppercase text-xxs font-weight-bolder opacity-7"><small>Created At</small></th>
-                                        <th class="text-center text-uppercase text-xxs font-weight-bolder opacity-7"><small>Name</small></th>
-                                        <th class="text-center text-uppercase text-xxs font-weight-bolder opacity-7"><small>Active Website</small></th>
-                                        <th class="text-center text-uppercase text-xxs font-weight-bolder opacity-7"><small>Email</small></th>
-                                        <th class="text-center text-uppercase text-xxs font-weight-bolder opacity-7"><small>Status</small></th>
-                                        <th class="text-center text-uppercase text-xxs font-weight-bolder opacity-7"><small>API Key</small></th>
-                                        <th class="text-center text-uppercase text-xxs font-weight-bolder opacity-7"><small>Action</small></th>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                        </div>
-                    </div>
-              </table>
+              <div class="card-body">
+                <div class="form-group mb-4">
+                  <input type="text" value="80" class="form-control">
+                </div>
+                <button class="btn btn-primary" type="submit">Save</button>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
+
+
+
       <footer class="main-footer">
         <div class="footer-left">
           <a href="templateshub.net">Templateshub</a></a>
@@ -318,15 +295,11 @@
   <!-- General JS Scripts -->
   <script src="assets/js/app.min.js"></script>
   <!-- JS Libraies -->
-  <script src="assets/bundles/amcharts4/core.js"></script>
-  <script src="assets/bundles/amcharts4/maps.js"></script>
-  <script src="assets/bundles/amcharts4/charts.js"></script>
-  <script src="assets/bundles/amcharts4/animated.js"></script>
-  <script src="assets/bundles/amcharts4/worldLow.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/bundles/datatables/datatables.min.js"></script>
+  <script src="assets/bundles/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
+  <script src="assets/bundles/jquery-ui/jquery-ui.min.js"></script>
   <!-- Page Specific JS File -->
-  <script src="assets/js/page/index.js"></script>
+  <script src="assets/js/page/datatables.js"></script>
   <!-- Template JS File -->
   <script src="assets/js/scripts.js"></script>
   <!-- Custom JS File -->
