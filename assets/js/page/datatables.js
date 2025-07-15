@@ -29,6 +29,7 @@ $("[data-checkboxes]").each(function () {
 });
 
 $("#table-1").dataTable({
+  scrollX:true,
   "columnDefs": [
     { "sortable": false, "targets": [2, 3] }
   ]

@@ -61,6 +61,14 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+.opacity-0   { opacity: 0; }
+.opacity-25  { opacity: 0.25; }
+.opacity-50  { opacity: 0.5; }
+.opacity-75  { opacity: 0.75; }
+.opacity-100 { opacity: 1; }
+
+
 html {
     font-family: sans-serif;
     line-height: 1.15;
@@ -9626,6 +9634,25 @@ button.bg-dark:hover {
 }
 .font-italic {
     font-style: italic !important;
+}
+.text-xxs {
+  font-size: 0.7rem; /* or any size you prefer */
+  font-weight: bold;
+}
+.text-xs {
+  font-size: 0.75rem !important;   /* 12px */
+}
+
+.text-sm {
+  font-size: 0.875rem !important;  /* 14px */
+}
+
+.text-md {
+  font-size: 1rem !important;      /* 16px (default) */
+}
+
+.text-lg {
+  font-size: 1.25rem !important;   /* 20px */
 }
 .text-white {
     color: #fff !important;

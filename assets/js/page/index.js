@@ -4,6 +4,7 @@ $(function () {
 	chart1();
 	chart2();
 	chart3();
+	donuts();
 
 	// select all on checkbox click
 	$("[data-checkboxes]").each(function () {
@@ -37,6 +38,46 @@ $(function () {
 
 
 });
+
+function donuts(){
+	  am4core.ready(function() {
+    // Use animated theme
+    am4core.useTheme(am4themes_animated);
+
+    // Sample data
+    var data = 
+    [
+      { "status": "Complete", "value": 60 },
+      { "status": "Pending", "value": 25 },
+      { "status": "Rejected", "value": 15 }
+    ];
+
+    function createDonut(divId) {
+      var chart = am4core.create(divId, am4charts.PieChart);
+      chart.data = data;
+
+      var pieSeries = chart.series.push(new am4charts.PieSeries());
+      pieSeries.dataFields.value = "value";
+      pieSeries.dataFields.category = "status";
+
+      // Make donut
+      pieSeries.innerRadius = am4core.percent(50);
+
+      // Disable labels
+      pieSeries.labels.template.disabled = true;
+
+      // Disable tooltips
+      pieSeries.slices.template.tooltipText = "";
+      pieSeries.slices.template.tooltipText = "{category}: {value}%";
+      
+    }
+
+    createDonut("trackingLinks");
+    createDonut("deepLinks");
+    createDonut("emailRecords");
+  }); // end am4core.ready()
+
+}
 
 function chart1() {
 	// Get current date info

@@ -191,7 +191,7 @@
               <a href="#" class="menu-toggle nav-link has-dropdown"><i
                   data-feather="users"></i><span>Publishers</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="#">Pending</a></li>
+                <li><a class="nav-link" href="pending.html">Pending</a></li>
                 <li><a class="nav-link" href="#">Hold</a></li>
                 <li><a class="nav-link" href="#">Active</a></li>
                 <li><a class="nav-link" href="#">Rejected</a></li>
@@ -202,10 +202,9 @@
               <a href="#" class="menu-toggle nav-link has-dropdown"><i
                   data-feather="bar-chart-2"></i><span>Advertisers</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="#">API Advertisers</a></li>
+                <li><a class="nav-link" href="api.html">API Advertisers</a></li>
                 <li><a class="nav-link" href="#">API Advertisers Show</a></li>
                 <li><a class="nav-link" href="#">Duplicate Advertisers </a></li>
-                <li><a class="nav-link" href="#"></a></li>
               </ul>
             </li>
             <li class="dropdown">
@@ -213,7 +212,7 @@
                   data-feather="user-check"></i><span>Approval</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="#">Pending</a></li>
-                <li><a class="nav-link" href="#">Joined</a></li>
+                <li><a class="nav-link" href="joined.html">Joined</a></li>
                 <li><a class="nav-link" href="#">Hold</a></li>
                 <li><a class="nav-link" href="#">Rejected</a></li>
               </ul>
@@ -222,7 +221,7 @@
             <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="tag"></i><span>Creatives</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="#">Coupons</a></li>
+                <li><a class="nav-link" href="coupons.html">Coupons</a></li>
               </ul>
             </li>
             <li class="menu-header">finance management</li>
@@ -230,7 +229,7 @@
               <a href="#" class="menu-toggle nav-link has-dropdown"><i
                   data-feather="credit-card"></i><span>Transactions</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="#">Transactions</a></li>
+                <li><a class="nav-link" href="transactions.html">Transactions</a></li>
                 <li><a class="nav-link" href="#">Missing Transactions</a></li>
               </ul>
             </li>
@@ -238,8 +237,8 @@
             <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="shield"></i><span>Manage</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="#">Users</a></li>
-                <li><a class="nav-link" href="#">Roles</a></li>
+                <li><a class="nav-link" href="users.html">Users</a></li>
+                <li><a class="nav-link" href="roles.html">Roles</a></li>
                 <li><a class="nav-link" href="#">Permissions</a></li>
               </ul>
             </li>
@@ -718,10 +717,10 @@
                     <table class="table table-hover mb-0">
                       <thead>
                         <tr>
-                          <th><small class="text-uppercase font-weight-bold">Advertisers Name</small></th>
-                          <th><small class="text-uppercase font-weight-bold">Date</small></th>
-                          <th><small class="text-uppercase font-weight-bold">Payment Method</small></th>
-                          <th><small class="text-uppercase font-weight-bold">Amount</small></th>
+                          <th><small class="text-uppercase font-weight-bolder opacity-75">Advertisers Name</small></th>
+                          <th><small class="text-uppercase font-weight-bolder opacity-75">Date</small></th>
+                          <th><small class="text-uppercase font-weight-bolder opacity-75">Payment Method</small></th>
+                          <th><small class="text-uppercase font-weight-bolder opacity-75">Amount</small></th>
                         </tr>
                       </thead>
                       <tbody>
@@ -780,10 +779,10 @@
                     <table class="table table-hover mb-0">
                       <thead>
                         <tr>
-                          <th><small class="text-uppercase font-weight-bold">Advertisers Name</small></th>
-                          <th><small class="text-uppercase font-weight-bold">Date</small></th>
-                          <th><small class="text-uppercase font-weight-bold">Payment Method</small></th>
-                          <th><small class="text-uppercase font-weight-bold">Amount</small></th>
+                          <th><small class="text-uppercase font-weight-bolder opacity-75">Advertisers Name</small></th>
+                          <th><small class="text-uppercase font-weight-bolder opacity-75">Date</small></th>
+                          <th><small class="text-uppercase font-weight-bolder opacity-75">Payment Method</small></th>
+                          <th><small class="text-uppercase font-weight-bolder opacity-75">Amount</small></th>
                         </tr>
                       </thead>
                       <tbody>
@@ -1031,46 +1030,6 @@
   <!-- Custom JS File -->
   <script src="assets/js/custom.js"></script>
 </body>
-<script>
-  am4core.ready(function() {
-    // Use animated theme
-    am4core.useTheme(am4themes_animated);
-
-    // Sample data
-    var data = 
-    [
-      { "status": "Complete", "value": 60 },
-      { "status": "Pending", "value": 25 },
-      { "status": "Rejected", "value": 15 }
-    ];
-
-    function createDonut(divId) {
-      var chart = am4core.create(divId, am4charts.PieChart);
-      chart.data = data;
-
-      var pieSeries = chart.series.push(new am4charts.PieSeries());
-      pieSeries.dataFields.value = "value";
-      pieSeries.dataFields.category = "status";
-
-      // Make donut
-      pieSeries.innerRadius = am4core.percent(50);
-
-      // Disable labels
-      pieSeries.labels.template.disabled = true;
-
-      // Disable tooltips
-      pieSeries.slices.template.tooltipText = "";
-      pieSeries.slices.template.tooltipText = "{category}: {value}%";
-      
-    }
-
-    createDonut("trackingLinks");
-    createDonut("deepLinks");
-    createDonut("emailRecords");
-  }); // end am4core.ready()
-</script>
-
-
 <!-- index.html  21 Nov 2019 03:47:04 GMT -->
 
 </html>
